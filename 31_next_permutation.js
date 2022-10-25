@@ -62,9 +62,11 @@ var nextPermutation = function (nums) {
         }
     }
 
+    /************** This portion is unnecessary. Leetcode wanted the nums array to be modified and no return value. That's why this has been done. **************/
     for (let i = 0; i < nums.length; i++) {
         nums[i] = result[i];
     }
+    /********************** **********************/
 
     return result;
 };
